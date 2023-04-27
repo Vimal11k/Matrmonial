@@ -1,0 +1,323 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+header {
+    font-family: sans-serif;
+    height: auto;
+
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/background.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.info {
+    color: white;
+    font-size: 20px;
+    padding: 20px 70px;
+    cursor: pointer;
+}
+
+
+.info span {
+    margin: 0 10px;
+}
+
+nav {
+    width: 100%;
+    height: 70px;
+    padding: 0 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+    color: white;
+    font-size: 2em;
+    font-family: normal;
+    letter-spacing: 2px;
+
+}
+
+.logo i {
+    color: #e84393;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+.menu a:hover {
+    background-color: #e84393;
+    border-radius: 8px;
+}
+
+/* .homecontent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10%;
+    width: 80%;
+    margin: auto;
+} */
+.box {
+    background: wheat;
+    width: 450px;
+    height: 500px;
+    position: absolute;
+    top: 25%;
+    right: 5%;
+    padding: 30px;
+}
+
+.box form {
+    width: 100%;
+}
+
+.box form input[type="text"] {
+    width: 100%;
+    padding: 20px 10px;
+    margin: 5px 0px;
+    outline: none;
+    border: none;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.box form input[type="submit"] {
+    width: 100%;
+    padding: 20px 10px;
+    margin: 5px 0px;
+    outline: none;
+    border: none;
+    background: #e84393;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.box span {
+    color: #e84393;
+    cursor: pointer;
+}
+
+.box form input[type="submit"]:hover {
+    background: transparent;
+    border: 1px solid grey;
+    color: black;
+}
+
+.htext {
+    position: absolute;
+    top: 200px;
+    left: 5%;
+    max-width: 500px;
+    color: white;
+}
+
+.htext h1 {
+    font-size: 2em;
+}
+
+.htext h2 {
+    font-size: 4em;
+}
+
+
+.htext span {
+    color: #e84393;
+}
+
+
+.htext p {
+    margin: 15px 0;
+    line-height: 2em;
+
+}
+
+
+.htext a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid white;
+    letter-spacing: 2px;
+    border-radius: 8px;
+    transition: 0.5s;
+    margin:10px ;
+}
+
+.htext a:hover {
+    background: #e84393;
+}
+
+.features {
+    margin: 4em auto;
+    padding: 1em;
+    position: relative;
+    font-family: Dancing Script;
+}
+
+.feature-title {
+    color: #333;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+    align-items: center;
+    text-align: center;
+    text-align: justify;
+
+}
+
+
+.features img {
+    -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+
+    border-radius: 50%;
+    height: 300px;
+    width: 500px;
+    -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    margin-bottom: 16px;
+}
+
+
+
+.features .heading {
+    text-align: center;
+    font-family: sans-serif;
+    color: #e84393;
+
+
+}
+
+
+.page-footer {
+    background-color: #222;
+    color: #ccc;
+    padding: 60px 0 30px;
+    font-family: Dancing Script;
+}
+
+.footer-copyright {
+    color: #666;
+    padding: 40px 0;
+}
+
+
+@media only screen and (max-width:800px) {
+    header .homecontent {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10%;
+        background-color: #fff;
+    }
+
+
+    .box {
+        background: wheat;
+        width: 400px;
+        height: 300px;
+        position: absolute;
+        top: 55%;
+        left: 5%;
+        padding: 30px;
+    }
+    
+    .box form {
+        width: 100%;
+        
+    }
+    
+    .box form input[type="text"] {
+        width: 100%;
+        padding: 8px 0px;
+        margin: 3px 0px;
+    }
+    
+    .box h2{
+        font-size: 18px;
+    }
+    .box form input[type="submit"] {
+        width: 100%;
+        padding: 8px 5px;
+        margin: 2px 0px;
+      
+    }
+    
+    .box span {
+        color: #e84393;
+        cursor: pointer;
+    }
+    
+    .box form input[type="submit"]:hover {
+        background: transparent;
+        border: 1px solid grey;
+        color: black;
+    }
+    
+    .htext {
+        position: absolute;
+        top: 200px;
+        left: 5%;
+        max-width: 500px;
+        color: white;
+    }
+    
+    .htext h1 {
+        font-size: 2em;
+    }
+    
+    .htext h2 {
+        font-size: 1em;
+    }
+    
+    
+    .htext span {
+        color: #e84393;
+    }
+    
+    
+    .htext p {
+        margin: 6px 0;
+        line-height: 1em;
+    
+    }
+    
+    
+    .htext a {
+        text-decoration: none;
+        color: white;
+        padding: 10px 20px;
+        border: 2px solid white;
+        letter-spacing: 2px;
+        border-radius: 8px;
+        transition: 0.5s;
+    }
+    
+    .htext a:hover {
+        background: #e84393;
+    }
+    
+    .box h1 {
+        font-size: 2em;
+    }
+
+    .box p {
+        font-size: 1.2rem;
+    } 
+
+    .features {
+        margin: 0;
+    }
+}
